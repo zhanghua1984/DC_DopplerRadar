@@ -1,0 +1,297 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Radar.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Radar.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 56
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 多普勒雷达V1.0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,18,13,21,21
+    LTEXT           "多普勒雷达测试 1.0 版",IDC_STATIC,50,10,84,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,50,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,182,7,50,14,WS_GROUP
+END
+
+IDD_COMMTEST_DIALOG DIALOGEX 0, 0, 410, 299
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "多普勒雷达 V1.0"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "串口关闭",IDC_BUTTON_PORTSTATU,10,13,50,15
+    COMBOBOX        IDC_COMBO_SERIOU,30,31,35,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,30,47,35,145,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JIAOYAN,30,63,35,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATA,30,79,35,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOP,30,95,35,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口",IDC_STATIC,7,33,19,12
+    LTEXT           "波特率",IDC_STATIC,4,49,25,8
+    GROUPBOX        "参数设置",IDC_STATIC_GROUP,1,2,66,112,BS_CENTER
+    LTEXT           "校验位",IDC_STATIC,4,65,25,8
+    LTEXT           "数据位",IDC_STATIC,4,81,25,8
+    LTEXT           "停止位",IDC_STATIC,4,97,25,8
+    CONTROL         "十六进制发送",IDC_CHECK_HEXSEND,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,347,262,62,
+                    14
+    CONTROL         "自动发送",IDC_CHECK_AUTOSEND,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,365,282,44,14
+    PUSHBUTTON      "选择文件",IDC_BUTTON_TRANSFILE,1,265,44,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "清空发送",IDC_BUTTON_EMPTYTEXT,238,261,38,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "发送",IDC_BUTTEN_MENUALSEND,236,282,38,14,NOT 
+                    WS_VISIBLE
+    LTEXT           "filepath",IDC_STATIC_FILEPAHT,1,217,85,9
+    EDITTEXT        IDC_EDIT_TXDATA,99,280,30,16,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_HSCROLL
+    CONTROL         "以十六进制显示",IDC_CHECK_HEXDISPLAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,120,68,11
+    PUSHBUTTON      "清空接收数据",IDC_BUTTON_EMPTYRX,8,146,59,16
+    CONTROL         "写入文件",IDC_CHECK_WRITETOFILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,133,51,11
+    PUSHBUTTON      "更改文件",IDC_BUTTON_FILENAME,47,282,37,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "存文本框内容",IDC_BUTTON_SAVEEDIT,1,282,37,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_RXDATA,197,2,212,164,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "计数清零",IDC_BUTTON_RESET,14,171,38,15,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "退出",IDC_BUTTON_CLOSE,14,191,37,26
+    LTEXT           "accept filename",IDC_STATIC_FILENAME,1,162,86,8
+    LTEXT           "STATUS:",IDC_STATIC_PORTSTATU,1,226,132,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "TX:",IDC_STATIC_TXLEN,185,226,43,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "RX:",IDC_STATIC_RXLEN,133,226,52,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "校验失败:",IDC_STATIC_CRCFAILD,229,226,57,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "计数器:",IDC_STATIC_COUNTER,287,226,55,14,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "丢帧数:",IDC_STATIC_LOSTFRAME,344,226,65,14,0,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "运行状态：",IDC_STATIC_GROUP2,72,2,122,165,BS_CENTER
+    LTEXT           "工作状态：",IDC_STATIC,5,255,41,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_WORKSTATUS,54,255,55,46,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "阅读距离：",IDC_STATIC,131,258,41,8,NOT WS_VISIBLE
+    LTEXT           "射频频率：",IDC_STATIC,283,255,41,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_READDISTANCE,177,255,55,68,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FRUINFO,323,255,29,13,ES_CENTER | ES_WANTRETURN | 
+                    NOT WS_VISIBLE
+    LTEXT           "门限电平：",IDC_STATIC,283,275,41,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_POWER,323,273,29,13,ES_CENTER | ES_WANTRETURN | 
+                    NOT WS_VISIBLE
+    LTEXT           "蜂鸣器：",IDC_STATIC,139,278,33,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_BUZZER,178,275,55,46,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "公里/小时",IDC_STATIC,143,18,37,8
+    LTEXT           "公里(0-999.9)",IDC_STATIC,141,51,53,8
+    LTEXT           "当前速度:",IDC_STATIC_CSPEED,76,17,64,12,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "通道计数1:",IDC_STATIC_CHANNEL1,76,49,64,12,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "通道计数2:",IDC_STATIC_CHANNEL2,75,77,64,11,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "公里(0-999.9)",IDC_STATIC,139,79,53,8
+    LTEXT           "加速度方向:",IDC_STATIC_ACCELERATION,76,105,64,11,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "加速度:",IDC_STATIC_ACCELERATER,77,136,64,11,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "G (0-10)",IDC_STATIC,145,137,33,8
+    GROUPBOX        "传感器状态：",IDC_STATIC_SENSOR,71,170,331,55,BS_CENTER
+    LTEXT           "工作模式:",IDC_STATIC_WORKMODULE,81,179,315,11,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "工作状态:",IDC_STATIC_WORKSTATE,80,193,316,11,0,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "运动方向有效性:",IDC_STATIC_DIRECTORWORK,80,207,148,11,
+                    0,WS_EX_CLIENTEDGE
+    LTEXT           "运动方向:",IDC_STATIC_DIRECTOR,248,208,148,11,0,
+                    WS_EX_CLIENTEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "commtest Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "commtest\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "OriginalFilename", "commtest.EXE\0"
+            VALUE "ProductName", "commtest 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_COMMTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 409
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 296
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 commtest(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Radar.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
